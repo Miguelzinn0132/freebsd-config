@@ -135,7 +135,7 @@ installKDE() {
 echo
 echo "Now let's install and configure KDE as your desktop environment..."
 
-pkg install -q -y sddm plasma6-sddm-kcm kde6
+pkg install -q -y sddm plasma6-sddm-kcm kde6-devel-6.1.2.24.01.90
 
 sysrc sddm_enable="YES"
 sysrc sddm_lang="pt_BR.UTF-8"
