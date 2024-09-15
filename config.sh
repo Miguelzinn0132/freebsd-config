@@ -67,8 +67,7 @@ echo "Now, let's install the necessary dependencies to run the graphical environ
 echo "We will also install useful utilities such as a browser and text editor!"
 echo
 
-pkg install -q -y xorg nano bash networkmgr wifimgr security/sudo drm-kmod
-pkg install -q -y chromium firefox vscode gh accessibility/gammy
+pkg install -q -y xorg nano bash security/sudo drm-kmod
 
 # Settings in /etc/rc.conf
 
@@ -136,7 +135,7 @@ installKDE() {
 echo
 echo "Now let's install and configure KDE as your desktop environment..."
 
-pkg install -q -y sddm plasma5-sddm-kcm kde5
+pkg install -q -y sddm plasma6-sddm-kcm kde6
 
 sysrc sddm_enable="YES"
 sysrc sddm_lang="pt_BR.UTF-8"
