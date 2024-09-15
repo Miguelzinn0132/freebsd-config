@@ -67,7 +67,7 @@ echo "Now, let's install the necessary dependencies to run the graphical environ
 echo "We will also install useful utilities such as a browser and text editor!"
 echo
 
-pkg install -q -y xorg nano bash security/sudo drm-kmod
+pkg install -y xorg nano bash security/sudo drm-kmod
 
 # Settings in /etc/rc.conf
 
